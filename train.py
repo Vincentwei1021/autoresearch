@@ -436,10 +436,10 @@ WINDOW_PATTERN = "SSL" # sliding window pattern: L=full, S=half context
 
 # Optimization
 TOTAL_BATCH_SIZE = 2**17 # ~131K tokens per optimizer step
-EMBEDDING_LR = 0.7245      # 0.630 * 1.15 (re-tuned for 5x MLP)
-UNEMBEDDING_LR = 0.00483  # 0.0042 * 1.15 (re-tuned for 5x MLP)
-MATRIX_LR = 0.0483        # 0.042 * 1.15 (re-tuned for 5x MLP)
-SCALAR_LR = 0.60375       # 0.525 * 1.15 (re-tuned for 5x MLP)
+EMBEDDING_LR = 0.79695      # 0.7245 * 1.1 (re-tuned for 5.5x MLP)
+UNEMBEDDING_LR = 0.005313  # 0.00483 * 1.1 (re-tuned for 5.5x MLP)
+MATRIX_LR = 0.05313        # 0.0483 * 1.1 (re-tuned for 5.5x MLP)
+SCALAR_LR = 0.664125       # 0.60375 * 1.1 (re-tuned for 5.5x MLP)
 WEIGHT_DECAY = 0.05      # cautious weight decay for Muon
 ADAM_BETAS = (0.8, 0.95) # Adam beta1, beta2
 WARMUP_RATIO = 0.05      # fraction of time budget for LR warmup
