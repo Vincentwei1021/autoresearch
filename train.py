@@ -436,7 +436,7 @@ WINDOW_PATTERN = "SSL" # sliding window pattern: L=full, S=half context
 
 # Optimization
 TOTAL_BATCH_SIZE = 2**17 # ~131K tokens per optimizer step
-EMBEDDING_LR = 0.79695      # 0.7245 * 1.1 (re-tuned for 5.5x MLP)
+EMBEDDING_LR = 0.677408      # 0.79695 * 0.85 (test differential embedding LR)
 UNEMBEDDING_LR = 0.005313  # 0.00483 * 1.1 (re-tuned for 5.5x MLP)
 MATRIX_LR = 0.05313        # 0.0483 * 1.1 (re-tuned for 5.5x MLP)
 SCALAR_LR = 0.664125       # 0.60375 * 1.1 (re-tuned for 5.5x MLP)
